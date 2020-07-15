@@ -1,0 +1,95 @@
+\chapter{Quick reference}
+\textbf{Correspondence between energy and wavenumbers}\\
+Setting $\tilde{c}_0=100c_0$,
+\begin{flalign*}
+&1\text{ J} =\frac{1}{h\tilde{c}_0}= 5.0341\times10^{22}\text{ cm}^{-1}&
+\end{flalign*}
+	\begin{tabular}{c|c}
+	Energy & Wavenumbers\\
+	\hline
+	$\hbar\omega$ & $\widetilde{\omega}=\omega/2\pi\tilde{c}_0$\\
+	\hline
+	$B=\hbar^2/2I$ & $\widetilde{B}=\frac{h}{4\pi I\tilde{c}_0}$
+	\end{tabular}	
+
+\rule{\textwidth}{0.4pt}
+
+\textbf{Particle in a box solutions} (\Cref{pibsol})\\
+\begin{flalign*}
+	&\psi_n(x)=\sqrt{\frac{2}{a}}\sin\left(\frac{n\pi}{a}x\right),\ \text{and }E_n=\frac{n^2\pi^2\hbar^2}{2ma^2}&
+\end{flalign*}
+
+\rule{\textwidth}{0.4pt}
+
+\textbf{Morse potential} (\Cref{morsepot})\\
+\emph{Functional form}
+\begin{flalign*}
+	&V_M(r)=D_e\lf[1-e^{-\beta(r-r_e)} \rt]^2&
+\end{flalign*}
+\emph{Parameters}
+\begin{flalign*}
+	&\beta=\sqrt{\frac{k_e}{2D_e}}\\
+	&E_{\nu}=\lf(\nu+\frac{1}{2} \rt)\hbar\omega-\lf(\nu+\frac{1}{2} \rt)^2\hbar\omega x_e \\
+	&\tilde{\ep}_{\nu}=\lf(\nu+\frac{1}{2} \rt)\widetilde{\omega}-\lf(\nu+\frac{1}{2} \rt)^2\widetilde{\omega} x_e \\
+	&D_e=\frac{\hbar{\omega}}{4x_e}\\
+	&\widetilde{D}_e=\frac{\widetilde{\omega}}{4x_e}\\
+	&D_0=D_e-E_0=D_e(1-x_e)^2\\
+	&\widetilde{D}_0=\widetilde{D}_e(1-x_e)^2&
+\end{flalign*}
+
+\rule{\textwidth}{0.4pt}
+
+\textbf{Laplacian in Carterian and spherical}
+\begin{flalign*}
+&\onabla^2=\diffp[2]{}{x}+\diffp[2]{}{y}+\diffp[2]{}{z}\\
+&\onabla^2=\frac{1}{r^2}\diffp*{\lf(r^2\diffp{}{r} \rt)}r+\frac{1}{r^2\sin\theta}\diffp*{\lf(\sin\theta\diffp{}{\theta} \rt)}\theta+\frac{1}{r^2\sin^2\theta}\lf(\diffp[2]{}{\phi}\rt)&
+\end{flalign*}
+
+\rule{\textwidth}{0.4pt}
+
+\textbf{Angular momentum operators}
+\begin{flalign*}
+&L_z=\frac{\hbar}{i}\diffp{}{\phi}\\
+&L^2=-\hbar^2\lf[\frac{1}{\sin\theta}\diffp{}{\theta}\lf(\sin\theta\diffp{}{\theta} \rt)+\frac{1}{\sin^2\theta}\diffp[2]{}{\phi} \rt]&
+\end{flalign*}
+
+\rule{\textwidth}{0.4pt}
+
+\textbf{Angular momentum commutator}
+\begin{flalign*}
+	&[L_x,L_y]=i\hbar L_z&
+\end{flalign*}
+
+\rule{\textwidth}{0.4pt}
+
+\textbf{Eigenvalues of $H$, $L^2$ and $L_z$}\\
+These three operators commute, therefore they have simultaneous eigenfunctions.
+\begin{flalign*}
+&H\psi=E\psi\\
+&L^2\psi=\hbar l(l+1)\psi\\
+&L_z\psi=\hbar m\psi&
+\end{flalign*}
+
+\rule{\textwidth}{0.4pt}
+
+\textbf{Functional forms of $p$ and $d$ orbitals}\\
+\emph{$p$-orbitals}
+\begin{flalign*}
+&\psi_{2p_x}\equiv\frac{1}{\sqrt{2}}(-\psi_{2p,+1}+\psi_{2p,-1})\propto xe^{-r/2a}\\
+&\psi_{2p_y}\equiv\frac{1}{\sqrt{2}}i(\psi_{2p,+1}+\psi_{2p,-1})\propto ye^{-r/2a}\\
+&\psi_{2p_z}\equiv\psi_{2p,0}\propto ze^{-r/2a}&
+\end{flalign*}
+\emph{$d$-orbitals}
+\begin{flalign*}
+&\psi_{3d_{z^2}}=\psi_{3d,0}\propto(3z^2-r^2)e^{-r/3a} \\
+&\psi_{3d_{xz}}=\frac{1}{\sqrt{2}}(\psi_{3d,+1}+\psi_{3d,-1})\propto xye^{-r/3a}\\
+&\psi_{3d_{yz}}=\frac{1}{\sqrt{2}}i(-\psi_{3d,+1}+\psi_{3d,-1})\propto yze^{-r/3a}\\
+&\psi_{3d_{x^2-y^2}}=\frac{1}{\sqrt{2}}(\psi_{3d,+2}+\psi_{3d,-2})\propto(x^2-y^2)e^{-r/3a}\\
+&\psi_{3d_{xy}}=\frac{1}{\sqrt{2}}i(-\psi_{3d,+2}+\psi_{3d,-2})\propto xye^{-r/3a}&
+\end{flalign*}
+
+\rule{\textwidth}{0.4pt}
+
+\textbf{Term symbols}\\
+\emph{Atomic term symbols}\\
+These are in the form of $^{(2S+1)}L_J$
