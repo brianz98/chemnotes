@@ -1,2 +1,3 @@
 # chemnotes
  
+Compile main.tex
